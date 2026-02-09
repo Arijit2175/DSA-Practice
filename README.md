@@ -1,2 +1,2 @@
 # DSA-Practice
-All the leetcode problems I solved in this repository
+All the leetcode problems I solved are in this repository
