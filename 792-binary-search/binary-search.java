@@ -3,10 +3,10 @@ class Solution {
         int l = 0;
         int r = nums.length - 1;
         while(l <= r) {
-            int m = l + (r - l)/2;
+            int m = l + (r - l) / 2;
             if(nums[m] == target) return m;
-            else if (target > nums[m]) l = m + 1;
-            else r = m - 1;
+            if(nums[m] > target) r = m - 1;
+            if(nums[m] < target) l = m + 1;
         }
         return -1;
     }
