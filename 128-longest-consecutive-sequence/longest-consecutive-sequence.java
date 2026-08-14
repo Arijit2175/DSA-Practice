@@ -5,14 +5,14 @@ class Solution {
         int longest = 0;
         for(int n : set) {
             if(!set.contains(n - 1)) {
-            int curr = n;
-            int length = 1;
-            while(set.contains(curr + 1)) {
-                curr++;
-                length++;
+                int curr = n;
+                int length = 1;
+                while(set.contains(curr + 1)) {
+                    curr++;
+                    length++;
+                }
+                longest = Math.max(longest, length);
             }
-            longest = Math.max(longest, length);
-        }
         }
         return longest;
     }
